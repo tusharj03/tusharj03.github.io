@@ -1,897 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tushar Jain - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Jain | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-      <!--
-        - #SIDEBAR
-      -->
-
-      <aside class="sidebar" data-sidebar>
-
-        <div class="sidebar-info">
-
-          <figure class="avatar-box">
-            <img src="./assets/images/my-avatar.png" alt="Tushar Jain" width="80">
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Tushar Jain">Tushar Jain</h1>
-
-            <p class="title">Industrial Engineer</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-
-        </div>
-
-        <div class="sidebar-info_more">
-
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:tusharj3@illinois.edu" class="contact-link">tusharj3@illinois.edu</a>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+14694088180" class="contact-link">+1 (469) 408-8180</a>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="2004-01-16">January 16, 2004</time>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Frisco, TX, USA</address>
-              </div>
-
-            </li>
-
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-
-            <li class="social-item">
-              <a href="https://www.linkedin.com/in/tusharjainnn/" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="http://github.com/tusharj03/" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="https://www.instagram.com/tusharjainnn/" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </aside>
-
-
-
-
-
-      <!--
-        - #main-content
-      -->
-
-      <div class="main-content">
-
-        <!--
-          - #NAVBAR
-        -->
-
-        <nav class="navbar">
-
-          <ul class="navbar-list">
-
-            <li class="navbar-item">
-              <button class="navbar-link  active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-
-          </ul>
-
-        </nav>
-
-
-
-
-
-
-       
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hey! I’m Tushar Jain, a passionate and driven individual with a strong foundation in Industrial Engineering and a minor in Computer Science from the University of Illinois at Urbana-Champaign. With experience across demand forecasting, AI-driven solutions, and supply chain optimization, I thrive in fast-paced environments where data-driven decision-making is key. My professional journey includes internships at Analog Devices, PepsiCo, and Woodward, where I refined my technical skills and developed a knack for problem-solving.
-          </p>
-
-          <p>
-Outside of my technical pursuits, I am deeply involved in entrepreneurship and innovation, having worked on projects ranging from AI-powered guitar tutoring to creating a networking app that connects professionals for mentorship and career growth. My goal is to build impactful products that solve real-world challenges.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-  <h3 class="h3 service-title">What I'm Doing</h3>
-
-  <ul class="service-list">
-
-    <li class="service-item">
-
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-      </div>
-
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Data Analysis and Forecasting</h4>
-
-        <p class="service-item-text">
-          Specializing in advanced data analysis and forecasting techniques, optimizing supply chain operations.
-        </p>
-      </div>
-
-    </li>
-
-    <li class="service-item">
-
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-      </div>
-
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Software Development</h4>
-
-        <p class="service-item-text">
-          Developing scalable solutions for real-time feedback systems and interactive platforms.
-        </p>
-      </div>
-
-    </li>
-
-    <li class="service-item">
-
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-      </div>
-
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Startup Growth</h4>
-
-        <p class="service-item-text">
-          Helping startups grow by applying data-driven insights and building scalable tech solutions, from product concept to launch.
-        </p>
-      </div>
-
-    </li>
-
-    <li class="service-item">
-
-      <div class="service-icon-box">
-        <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-      </div>
-
-      <div class="service-content-box">
-        <h4 class="h4 service-item-title">Tech Integration & Automation</h4>
-
-        <p class="service-item-text">
-          Streamlining complex workflows and implementing tech solutions for enhanced operational efficiency.
-        </p>
-      </div>
-
-    </li>
-
-  </ul>
-
-</section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-          
-
-          
-
-
-       
-
-      </article>
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Illinois - Urbana Champaign</h4>
-
-              <span>2022-2026 | Industrial Engineering | Edmund James Scholar | GPA: 3.6/4.0</span>
-
-              <p class="timeline-text">
-                • Organizations: Institute of Industrial and System Engineers – Mentorship Director, Adaptive Abilities – President, Engineering Council - Senior Technology Director, Campus Tour Guide, Illinois Consulting Group <br>
-                • Certifications: Six Sigma Green Belt, AWS Certified Cloud Practitioner, Web Development 
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Centennial High School</h4>
-
-              <span>2018 — 2022</span>
-
-              <p class="timeline-text">
-                • Organizations: National Honor Society - President, Gavel Club, Band, Business Professionals of America, Youth and Government.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">PepsiCo</h4>
-
-              <span>Supply Chain Intern | Purchase, New York | May 2025 – August 2025</span>
-
-              <p class="timeline-text">
-                •	Led rollout of a new customer-management system across all franchised owned bottling operations, helping to reduce outbound lead time. <br>
-                •	Built a Power BI dashboard, automating franchised versus company owned bottling operation key metrics to improve operational visibility.
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Analog Devices</h4>
-
-              <span>Data Analytics Intern | San Jose, California | January 2025 – May 2025</span>
-
-              <p class="timeline-text">
-                •	Built a machine learning forecasting pipeline for 20 product families that cut mean absolute error by 1,200 units/month. <br>
-                •	Implemented statistical models to complement machine learning forecasts, increasing demand prediction accuracy and reducing overbias.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Woodward</h4>
-
-              <span>Product Management Intern | Loves Park, Illinois | May 2024 - August 2024</span>
-
-              <p class="timeline-text">
-                •	Led the creation of a risk identification dashboard, streamlining supplier management processes and reducing project risk occurrences by 12%. <br>
-                •	Communicated with cross-functional teams (engineering, design, and marketing) to ensure alignment with customer relationship management objectives, improving on time delivery by 7%.
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mnemonic Dictionary</h4>
-
-              <span>Product Management Intern | Remote | May 2023 – August 2023</span>
-
-              <p class="timeline-text">
-                 • Implemented a quality management system that significantly improved app performance, resulting in a 23% decrease in user-reported issues. <br>
-                 • Developed an automated machine learning model deployment pipeline that reduced the time-to-deployment from weeks to minutes.
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Course Assistant</h4>
-
-              <span>CS124 Assistant and ENG100 Learning Assistant | Champaign, Illinois | May 2023 – Present</span>
-
-              <p class="timeline-text">
-                •	Coordinated with other faculty members to develop and update 25 lecture modules with real-world case studies and industry trends. <br>
-                •	Conducted one-on-one and group tutoring to assist students.
-
-
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My Skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="80">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="70">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C++</h5>
-                <data value="70">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Excel</h5>
-                <data value="90">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="50">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Power BI</h5>
-                <data value="70">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web Design</h5>
-                <data value="70">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CAD</h5>
-                <data value="70">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Mobile Development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Research</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Mobile Development</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Research</button>
-              </li>
-
+<body class="bg-dark text-light overflow-x-hidden">
+
+    <!-- Mouse glowing orb effect -->
+    <div id="blob"></div>
+    <div id="blob-blur"></div>
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Tushar<span class="text-gradient">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://2025.eohillinois.org/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-11.png" alt="Engineering Open House" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Engineering Open House</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://campuscompliments.onrender.com/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-12.png" alt="Campus Compliments" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Campus Compliments</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://studymatchuiuc.vercel.app/home">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="StudyMatch" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">StudyMatch</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.turbolearn.ai/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="TurboLearn" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">TurboLearn</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://audiotranscriberlanding.vercel.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-13.png" alt="Resonote" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Resonote</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://stellular-dodol-d9a84c.netlify.app/pages/mindmelo">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-10.png" alt="Pomodoro" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Pomodoro</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="mobile development">
-              <a href="https://github.com/tusharj03/EMT-AI-Agent">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="EMT AI Agent" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">EMT AI Agent</h3>
-
-                <p class="project-category">Mobile Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="research">
-              <a href="https://github.com/tusharj03/Python-Robotics">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="Machine Learning Research" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Machine Learning Research</h3>
-
-                <p class="project-category">Research</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="Physics-based Optimization Framework Research" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Physics-based Optimization Framework Research</h3>
-
-                <p class="project-category">Research</p>
-
-              </a>
-            </li>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section glass-panel">
+            <div class="hero-content reveal">
+                <div class="hero-badge">Welcome to my universe</div>
+                <h1 class="hero-title">
+                    Hi, I'm <br>
+                    <span class="text-gradient">Tushar Jain</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typewriter"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc">
+                    I thrive in fast-paced environments where data-driven decision-making meets engineering excellence. Building impactful products that solve real-world challenges.
+                </p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <!-- Social Links -->
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/tusharjainnn/" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="http://github.com/tusharj03/" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/tusharjainnn/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"/><circle cx="16.806" cy="7.207" r="1.078"/><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.059.79.253 1.53.596 2.184a4.6 4.6 0 0 0 2.633 2.633c.693.306 1.452.489 2.184.536.963.043 1.268.055 3.71.055s2.755 0 3.71-.055c.79-.059 1.53-.254 2.186-.596a4.6 4.6 0 0 0 2.633-2.633 6.643 6.643 0 0 0 .419-2.184c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.952-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image reveal delay-1">
+                <div class="image-wrapper">
+                    <img src="./assets/images/my-avatar.png" alt="Tushar Jain" class="glow-avatar">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                </div>
+            </div>
         </section>
 
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.7179412802825!2d-96.6929334!3d33.0198431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3d1303dd919f%3A0xc915c1c90e0c0a1e!2sFrisco%2C%20TX%2C%20USA!5e0!3m2!1sen!2sbd!4v1685879351234!5m2!1sen!2sbd"
-              width="400" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title reveal">About <span class="text-gradient">Me</span></h2>
+            <div class="about-grid reveal">
+                <div class="about-text glass-card">
+                    <p>
+                        Hey! I’m Tushar Jain, a passionate and driven individual with a strong foundation in Industrial Engineering and a minor in Computer Science from the University of Illinois at Urbana-Champaign. With experience across demand forecasting, AI-driven solutions, and supply chain optimization, I thrive in fast-paced environments where data-driven decision-making is key. My professional journey includes internships at Analog Devices, PepsiCo, and Woodward, where I refined my technical skills and developed a knack for problem-solving.
+                    </p>
+                    <p class="mt-4">
+                        Outside of my technical pursuits, I am deeply involved in entrepreneurship and innovation, having worked on projects ranging from AI-powered guitar tutoring to creating a networking app that connects professionals for mentorship and career growth. My goal is to build impactful products that solve real-world challenges.
+                    </p>
+                </div>
+                <div class="roles-grid">
+                    <div class="role-card glass-card reveal delay-1">
+                        <div class="role-icon">📊</div>
+                        <h3>Data Analysis</h3>
+                        <p>Specializing in advanced data analysis and forecasting techniques.</p>
+                    </div>
+                    <div class="role-card glass-card reveal delay-2">
+                        <div class="role-icon">💻</div>
+                        <h3>Software Dev</h3>
+                        <p>Developing scalable solutions for real-time feedback systems.</p>
+                    </div>
+                    <div class="role-card glass-card reveal delay-3">
+                        <div class="role-icon">🚀</div>
+                        <h3>Startup Growth</h3>
+                        <p>Helping startups grow by applying data-driven insights.</p>
+                    </div>
+                    <div class="role-card glass-card reveal delay-4">
+                        <div class="role-icon">⚙️</div>
+                        <h3>Tech Integration</h3>
+                        <p>Streamlining and automating complex workflows globally.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills -->
+            <div class="skills-section reveal mt-10">
+                <h3 class="subsection-title mb-4">Core Competencies</h3>
+                <div class="skills-wrapper">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Web Design</span>
+                    <span class="skill-tag">CAD</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Six Sigma</span>
+                </div>
+            </div>
         </section>
 
+        <!-- Experience & Education -->
+        <section id="experience" class="section bg-darker">
+            <h2 class="section-title reveal">Journey & <span class="text-gradient">Experience</span></h2>
+            
+            <div class="timeline">
+                <!-- PepsiCo -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">May 2025 – Aug 2025</span>
+                        <h3 class="timeline-role">Supply Chain Intern</h3>
+                        <h4 class="timeline-company text-gradient">PepsiCo - Purchase, NY</h4>
+                        <ul class="timeline-details">
+                            <li>Led rollout of a new customer-management system across franchised bottling operations, helping to reduce outbound lead time.</li>
+                            <li>Built a Power BI dashboard, automating franchised versus company-owned bottling operation metrics to improve visibility.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <section class="contact-form">
+                <!-- Analog Devices -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Jan 2025 – May 2025</span>
+                        <h3 class="timeline-role">Data Analytics Intern</h3>
+                        <h4 class="timeline-company text-gradient">Analog Devices - San Jose, CA</h4>
+                        <ul class="timeline-details">
+                            <li>Built a machine learning forecasting pipeline for 20 product families that cut mean absolute error by 1,200 units/month.</li>
+                            <li>Implemented statistical models to complement machine learning forecasts, increasing prediction accuracy and reducing overbias.</li>
+                        </ul>
+                    </div>
+                </div>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <!-- Woodward -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">May 2024 - Aug 2024</span>
+                        <h3 class="timeline-role">Product Management Intern</h3>
+                        <h4 class="timeline-company text-gradient">Woodward - Loves Park, IL</h4>
+                        <ul class="timeline-details">
+                            <li>Led creation of a risk identification dashboard, reducing project risk occurrences by 12%.</li>
+                            <li>Aligned cross-functional teams with customer relationship objectives, improving on-time delivery by 7%.</li>
+                        </ul>
+                    </div>
+                </div>
 
-          <form action="#" class="form" data-form>
+                <!-- Mnemonic Dictionary -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">May 2023 – Aug 2023</span>
+                        <h3 class="timeline-role">Product Management Intern</h3>
+                        <h4 class="timeline-company text-gradient">Mnemonic Dictionary - Remote</h4>
+                        <ul class="timeline-details">
+                            <li>Implemented a quality management system improving app performance, creating a 23% decrease in user-reported issues.</li>
+                            <li>Developed an automated machine learning model deployment pipeline, reducing deployment time from weeks to minutes.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education UIUC -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card border-accent">
+                        <span class="timeline-date">2022 – 2026</span>
+                        <h3 class="timeline-role">Industrial Engineering (Minor in CS)</h3>
+                        <h4 class="timeline-company text-gradient">University of Illinois - Urbana Champaign</h4>
+                        <p class="mt-2 text-sm text-gray">GPA: 3.6/4.0 | Edmund James Scholar</p>
+                        <ul class="timeline-details mt-2">
+                            <li><strong>Activities:</strong> Mentorship Director at IISE, President of Adaptive Abilities, Senior Tech Director at Engineering Council, Illinois Consulting Group.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <h2 class="section-title reveal">Featured <span class="text-gradient">Projects</span></h2>
+            
+            <!-- Filters -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="research">Research</button>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="https://2025.eohillinois.org/" target="_blank" class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-11.png" alt="Engineering Open House">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Engineering Open House</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
 
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+                <!-- Project 2 -->
+                <a href="https://campuscompliments.onrender.com/" target="_blank" class="project-card glass-card reveal delay-1" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-12.png" alt="Campus Compliments">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Campus Compliments</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
 
-          </form>
+                <!-- Project 3 -->
+                <a href="https://studymatchuiuc.vercel.app/home" target="_blank" class="project-card glass-card reveal delay-2" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-2.png" alt="StudyMatch">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>StudyMatch</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
 
+                <!-- Project 4 -->
+                <a href="https://www.turbolearn.ai/" target="_blank" class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-1.png" alt="TurboLearn">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TurboLearn</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="https://audiotranscriberlanding.vercel.app/" target="_blank" class="project-card glass-card reveal delay-1" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-13.png" alt="Resonote">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Resonote</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="https://github.com/tusharj03/EMT-AI-Agent" target="_blank" class="project-card glass-card reveal delay-2" data-category="mobile">
+                    <div class="project-image">
+                        <img src="./assets/images/project-4.png" alt="EMT AI Agent">
+                        <div class="project-overlay">
+                            <span class="view-btn">View GitHub</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EMT AI Agent</h3>
+                        <span class="project-tag">Mobile Development</span>
+                    </div>
+                </a>
+
+                <!-- Project 7 -->
+                <a href="https://stellular-dodol-d9a84c.netlify.app/pages/mindmelo" target="_blank" class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="./assets/images/project-10.png" alt="Pomodoro">
+                        <div class="project-overlay">
+                            <span class="view-btn">View Live Project</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pomodoro</h3>
+                        <span class="project-tag">Web Development</span>
+                    </div>
+                </a>
+
+                <!-- Project 8 -->
+                <a href="https://github.com/tusharj03/Python-Robotics" target="_blank" class="project-card glass-card reveal delay-1" data-category="research">
+                    <div class="project-image">
+                        <img src="./assets/images/project-5.png" alt="Machine Learning Research">
+                        <div class="project-overlay">
+                            <span class="view-btn">View GitHub</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Machine Learning Research</h3>
+                        <span class="project-tag">Research</span>
+                    </div>
+                </a>
+
+                <!-- Project 9 -->
+                <a href="#" class="project-card glass-card reveal delay-2" data-category="research">
+                    <div class="project-image">
+                        <img src="./assets/images/project-6.png" alt="Physics-based Optimization">
+                        <div class="project-overlay">
+                            <span class="view-btn">Read More</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Physics-based Optimization</h3>
+                        <span class="project-tag">Research</span>
+                    </div>
+                </a>
+            </div>
         </section>
 
-      </article>
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-darker pb-20">
+            <h2 class="section-title reveal">Let's <span class="text-gradient">Connect</span></h2>
+            
+            <div class="contact-grid reveal">
+                <div class="contact-info-panel glass-card">
+                    <h3>Get In Touch</h3>
+                    <p class="mb-6 text-gray">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Frisco, TX, USA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:tusharj3@illinois.edu" class="hover-gradient">tusharj3@illinois.edu</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+14694088180" class="hover-gradient">+1 (469) 408-8180</a>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
+                <form class="contact-form glass-card" onsubmit="event.preventDefault(); alert('Thanks for your message! This is a demo template response.');">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required class="form-input">
+                        <label for="name" class="form-label">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required class="form-input">
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required class="form-input"></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </section>
 
-  </main>
+    </main>
 
+    <footer class="glass-panel text-center py-6">
+        <p class="text-gray text-sm">&copy; 2026 Tushar Jain. Designed with precision and passion.</p>
+    </footer>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
